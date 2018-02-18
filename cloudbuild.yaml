@@ -2,10 +2,10 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [
   "build", 
-  "-t", "gcr.io/cloudkite-public/git-crypt:$COMMIT_SHA", 
+  "-t", "gcr.io/cloudkite-public/$REPO_NAME:$COMMIT_SHA",
   "."]
 
 images: [
-  'gcr.io/cloudkite-public/git-crypt:$COMMIT_SHA'
+  'gcr.io/cloudkite-public/$REPO_NAME:$COMMIT_SHA'
 ]
   
