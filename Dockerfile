@@ -5,6 +5,7 @@ ENV VERSION 0.6.0
 RUN apk --update add \
    curl \
    g++ \
+   git \
    make \
    openssl \
    openssl-dev \
