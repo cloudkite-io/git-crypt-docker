@@ -3,7 +3,6 @@ FROM alpine:3.7
 ENV VERSION 0.6.0
 
 RUN apk --update add \
-   bash \
    curl \
    g++ \
    make \
